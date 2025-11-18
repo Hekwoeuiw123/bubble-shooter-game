@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Shooter Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="script.js" defer></script>
+</head>
+
+<body class="noscroll">
+    <header class="head">
+        <div class="header-content">
+            <span class="label">Timer</span>
+            <span class="time">00:00</span>
+        </div>
+        <div class="header-content">
+            <span class="label">Target</span>
+            <span class="targrt">1</span>
+        </div>
+        <div class="header-content">
+            <span class="label">Score</span>
+            <span class="score">0</span>
+        </div>
+        <div class="header-content">
+            <span class="label">H-Score</span>
+            <span class="high-score">0</span>
+        </div>
+    </header>
+    <section class="section-start">
+        <div class="start-container">
+            <button class="btn-start">Start</button>
+            <button class="btn-select">Select</button>
+        </div>
+        <div class="difficulty-buttons">
+            <h2>Select Difficulty</h2>
+            <button class="btn-select easy" >Easy</button>
+            <button class="btn-select medium" >Medium</button>
+            <button class="btn-select hard" >Hard</button>
+        </div>
+
+    </section>
+    <section class="section-btn"></section>
+    <section class="section-over">
+        <h1>Game over !!!!</h1>
+        <h2>Score : <span></span></h2>
+        <button class="btn-restart">Restart</button>
+    </section>
+    <section class="section-countdown">
+        <div class="countdown">
+            <h2 class="countdown-text">Get Ready</h2>
+            <div class="countdown-timer">
+                <span class="countdown-number">3</span>
+            </div>
+        </div>
+    </section>
+    <!-- Audio For Correct and Wrong Ans -->
+    <audio id="sound-correct" src="correct.mp3" preload="auto"></audio>
+    <audio id="sound-wrong" src="wrong.mp3" preload="auto"></audio>
+</body>
+
+</html>
